@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     <span>
-      nuevo2
+      nuevo22222
     </span>
 
       <p>nuevo</p>
