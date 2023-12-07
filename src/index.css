@@ -2,12 +2,28 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background: rgba(129, 129, 129, 0.466);
+  background: linear-gradient(to bottom right, #87CEEB, #5F9EA0, #9987eb, #5F9EA0);
+  background-size: 200% 200%;
+  animation: waveAnimation 10s linear infinite;
+  margin: 0;
   font-family: 'Nova Square', Arial, Helvetica, sans-serif;
 
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+@keyframes waveAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 #root{
@@ -16,3 +32,5 @@ body {
   position: relative;
   min-height: 100vh;
 }
+
+

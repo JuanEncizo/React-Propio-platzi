@@ -1,0 +1,25 @@
+h1 {
+    font-size: 3em;
+    background: transparent;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to bottom right, #ebaf87, #a05f5f, #000000, #5fa06a);
+    background-size: 200% 200%;
+    animation: waveAnimation 10s linear infinite;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @keyframes waveAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
