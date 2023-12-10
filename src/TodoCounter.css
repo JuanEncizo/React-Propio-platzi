@@ -1,13 +1,15 @@
-h1 {
-    font-size: 3em;
+.TodoCounter {
+    font-size: 24px;
     background: transparent;
     background-clip: text;
     color: transparent;
-    background-image: linear-gradient(to bottom right, #ebaf87, #a05f5f, #000000, #5fa06a);
+    background-image: linear-gradient(to bottom right, #e9eb87, #5f60a0, #000000, #a05f5f);
     background-size: 200% 200%;
     animation: waveAnimation 10s linear infinite;
     margin: 0;
-    padding: 20px;
+    
+    padding: 24px;
+    
     text-align: center;
   }
   
@@ -23,3 +25,10 @@ h1 {
     }
   }
   
+
+  .TodoCounter span{
+
+    font-weight: bold;
+    color: red;
+
+  }
