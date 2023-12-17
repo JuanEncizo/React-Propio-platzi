@@ -1,10 +1,22 @@
 import './TodoSearch.css'
+import React, { useState } from 'react';
 
 function TodoSearch(){
+
+    const [ValorBuscado, SetValorBuscado] = useState('');
+
+    console.log(ValorBuscado);
+
+    
+
+
+
 return(
 
     <input placeholder="Buscar Todos"
-    className="TodoSearch"></input>
+    value={ValorBuscado}
+    className="TodoSearch"
+    onChange={(event) => {SetValorBuscado(event.target.value);}} ></input>
 );
 
 }

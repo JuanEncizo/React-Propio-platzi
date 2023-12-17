@@ -5,13 +5,15 @@ import { TodoCounter } from './TodoCounter';
 import { TodoSearch } from './TodoSearch';
 import { CreateTodoButton } from './CreateTodoButton';
 import { TodoList } from './TodoList';
+import { Test } from './Test';
 import React from 'react';
 
 
+
 const defaultTodos = [
-  {text: 'Cortar cebolla', completed: true},
-  {text: 'traer amiga', completed: false},
-  {text: 'Jugar con el perro', completed: true},
+  {text: 'Cortar cebolla', completed: true, test: false},
+  {text: 'traer amiga', completed: false, test: true},
+  {text: 'Jugar con el perro', completed: false, test: true},
   
 ];
 
@@ -23,6 +25,7 @@ function App() {
     <TodoCounter
       completed = {6}
       total ={10}
+      
     />
 
    <TodoSearch/>
@@ -33,6 +36,7 @@ function App() {
           key = {todo.text}
           text = {todo.text}
           completed = {todo.completed} 
+          test = {todo.test}
         />
       ))}
    
@@ -40,6 +44,10 @@ function App() {
     </TodoList>
 
     <CreateTodoButton/>
+
+    {/* <Test/> */}
+
+    
     
 
 
